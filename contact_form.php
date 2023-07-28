@@ -28,7 +28,7 @@ if(!empty($_POST["Name"]) && !empty($_POST["Email"]))
     }
     else echo "<h4>Your email-address is not valid!</h4>";
 }
-else echo "Some of your information isn't given or is wrong. ";
+else echo "Some of your information wasn't given!. ";
 }
 
 

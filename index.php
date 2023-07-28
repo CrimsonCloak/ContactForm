@@ -23,15 +23,5 @@
 <input type="submit" value="Send">
 
 </form>
-
-
-
-
-<?php
-
-echo 'PHP test!'
-
-?>
-
 </body>
 </html>
