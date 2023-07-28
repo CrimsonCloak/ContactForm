@@ -6,9 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
 
 echo '<h4>You submitted a form!!</h4> <br>';
 
-if (isset($_POST["Updates"])){
-    $UpdatesText = "";
-}
+
 
 if(!empty($_POST["Name"]) && !empty($_POST["Email"]))
 {
@@ -18,7 +16,11 @@ if(!empty($_POST["Name"]) && !empty($_POST["Email"]))
         }
     $Name = $_POST["Name"];
     $Email= $_POST["Email"];
-    $UpdatesText = "not";
+
+    if (isset($_POST["Updates"])){
+        $UpdatesText = "";
+    }
+  
 
     if(checkEmail($Email))
     {
