@@ -16,7 +16,7 @@
 <label for="Email">Email address:</label> <br>
 <input type="text" name="Email" id="Email"> <br>
 
-<label for="Updates">I would like to receive updates and new related to my PHP skills.</label> <br>
+<label for="Updates">I would like to receive updates and news related to my PHP skills.</label> <br>
 <input type="checkbox" name="Updates" id="Updates"><br>
 
 
