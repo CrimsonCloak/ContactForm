@@ -1,10 +1,13 @@
 
 <?php
+
+$Feedback = "";
+
 if ($_SERVER["REQUEST_METHOD"] === "POST"){ 
 
 
 
-echo '<h4>You submitted a form!!</h4> <br>';
+$Feedback .=  '<h4>You submitted a form!!</h4> <br>';
 
 
 
@@ -24,21 +27,22 @@ if(!empty($_POST["Name"]) && !empty($_POST["Email"]))
 
     if(checkEmail($Email))
     {
-        echo "<h4>Your name is: $Name</h4>";
-        echo "<h4>Your email is: $Email</h4>";
-        echo "<h4>You have decided to $UpdatesText receive updates and news related to your PHP skills!</h4>";
+        $Feedback .=  "<h4>Your name is: $Name</h4>";
+        $Feedback .=  "<h4>Your email is: $Email</h4>";
+        $Feedback .=  "<h4>You have decided to $UpdatesText receive updates and news related to your PHP skills!</h4>";
     }
-    else echo "<h4>Your email-address is not valid!</h4>";
+    else $Feedback .=  "<h4>Your email-address is not valid!</h4>";
 }
-else echo "Some of your information wasn't given!. ";
+else $Feedback .=  "<h4>Some of your information wasn't given! </h4>";
+echo $Feedback;
 }
 
 
 
 
-// echo 'Your name is: $_POST["Name"]';
-// echo 'Your email address is: $_POST["Email"]';
-// echo "You have decided *NOT* to receive updates."
+// $Feedback .=  'Your name is: $_POST["Name"]';
+// $Feedback .=  'Your email address is: $_POST["Email"]';
+// $Feedback .=  "You have decided *NOT* to receive updates."
 
 
 

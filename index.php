@@ -22,6 +22,15 @@
 
 <input type="submit" value="Send">
 
+<div id="Feedback"></div>
+<?php
+
+
+
+
+?>
+
+
 </form>
 </body>
 </html>
