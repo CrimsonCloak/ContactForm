@@ -34,7 +34,8 @@ if(!empty($_POST["Name"]) && !empty($_POST["Email"]))
     else $Feedback .=  "<h4>Your email-address is not valid!</h4>";
 }
 else $Feedback .=  "<h4>Some of your information wasn't given! </h4>";
-echo $Feedback;
+echo  
+"<div id='Feedback'>$Feedback </div>"; // Feedback ID used to style using CSS
 }
 
 
