@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form action="contact_form.php" method="post">
+<form action="#" method="post">
 
 <label for="Name">Name:</label> <br>
 <input type="text" id="Name" name="Name"> <br>
@@ -24,10 +24,7 @@
 
 <div id="Feedback"></div>
 <?php
-
-
-
-
+require 'contact_form.php';
 ?>
 
 
