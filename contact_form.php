@@ -19,7 +19,7 @@ if(!empty($_POST["Name"]) && !empty($_POST["Email"]))
         }
     $Name = $_POST["Name"];
     $Email= $_POST["Email"];
-
+    $UpdatesText = "not";
     if (isset($_POST["Updates"])){
         $UpdatesText = "";
     }

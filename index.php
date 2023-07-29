@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact form</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="styles.php"> -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -22,10 +24,14 @@
 
 <input type="submit" value="Send">
 
-<div id="Feedback"></div>
+<div id="Feedback">
 <?php
 require 'contact_form.php';
 ?>
+
+
+</div>
+
 
 
 </form>
