@@ -9,5 +9,12 @@ h4 {
 }
 form{
 margin-bottom: 2rem;
-
+border: 1px black solid;
+width: 40rem;
+padding: 1rem 2rem;
+margin: 1rem auto;
+text-align: center;
+}
+input{
+    margin-bottom: 1rem;
 }
